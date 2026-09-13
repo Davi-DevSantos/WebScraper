@@ -1,0 +1,26 @@
+[project]
+name = "webscrape"
+version = "0.1.0"
+description = "A Webscrape project"
+authors = [
+    {name = "Davx",email = "devsantos.davi@gmail.com"}
+]
+requires-python = ">=3.14"
+dependencies = [
+    "playwright (>=1.62.0,<2.0.0)",
+    "pandas (>=3.0.5,<4.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)",
+    "playwright-stealth (>=2.0.3,<3.0.0)"
+]
+
+[dependency-groups]
+dev = [
+    "playwright (>=1.62.0,<2.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
